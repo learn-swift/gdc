@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         for i in 0..<100{
             dispatch_async(queue, {
                 print("\(i) - \(NSThread.currentThread())")
+                sleep(1)
             })
         }
     }
